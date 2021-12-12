@@ -31,12 +31,12 @@ namespace Frame_Modeling
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnConSc3 = new System.Windows.Forms.Button();
+            this.btnChaSc2 = new System.Windows.Forms.Button();
+            this.btnInputSc1 = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.lboxLog = new System.Windows.Forms.ListBox();
             this.pMain = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -67,10 +67,10 @@ namespace Frame_Modeling
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 80F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 80F));
-            this.tableLayoutPanel2.Controls.Add(this.button3, 2, 0);
-            this.tableLayoutPanel2.Controls.Add(this.button2, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.button1, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.button4, 4, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btnConSc3, 2, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btnChaSc2, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btnInputSc1, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btnExit, 4, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 480);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -78,6 +78,46 @@ namespace Frame_Modeling
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(807, 74);
             this.tableLayoutPanel2.TabIndex = 0;
+            // 
+            // btnConSc3
+            // 
+            this.btnConSc3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnConSc3.Location = new System.Drawing.Point(163, 3);
+            this.btnConSc3.Name = "btnConSc3";
+            this.btnConSc3.Size = new System.Drawing.Size(74, 68);
+            this.btnConSc3.TabIndex = 2;
+            this.btnConSc3.Text = "Config";
+            this.btnConSc3.UseVisualStyleBackColor = true;
+            // 
+            // btnChaSc2
+            // 
+            this.btnChaSc2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnChaSc2.Location = new System.Drawing.Point(83, 3);
+            this.btnChaSc2.Name = "btnChaSc2";
+            this.btnChaSc2.Size = new System.Drawing.Size(74, 68);
+            this.btnChaSc2.TabIndex = 1;
+            this.btnChaSc2.Text = "Chart";
+            this.btnChaSc2.UseVisualStyleBackColor = true;
+            // 
+            // btnInputSc1
+            // 
+            this.btnInputSc1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnInputSc1.Location = new System.Drawing.Point(3, 3);
+            this.btnInputSc1.Name = "btnInputSc1";
+            this.btnInputSc1.Size = new System.Drawing.Size(74, 68);
+            this.btnInputSc1.TabIndex = 0;
+            this.btnInputSc1.Text = "Input";
+            this.btnInputSc1.UseVisualStyleBackColor = true;
+            // 
+            // btnExit
+            // 
+            this.btnExit.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnExit.Location = new System.Drawing.Point(730, 3);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(74, 68);
+            this.btnExit.TabIndex = 3;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = true;
             // 
             // lboxLog
             // 
@@ -97,46 +137,6 @@ namespace Frame_Modeling
             this.pMain.Name = "pMain";
             this.pMain.Size = new System.Drawing.Size(807, 371);
             this.pMain.TabIndex = 2;
-            // 
-            // button1
-            // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.Location = new System.Drawing.Point(3, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(74, 68);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.Location = new System.Drawing.Point(83, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(74, 68);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button3.Location = new System.Drawing.Point(163, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(74, 68);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button4.Location = new System.Drawing.Point(730, 3);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(74, 68);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -158,10 +158,10 @@ namespace Frame_Modeling
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.ListBox lboxLog;
         private System.Windows.Forms.Panel pMain;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnConSc3;
+        private System.Windows.Forms.Button btnChaSc2;
+        private System.Windows.Forms.Button btnInputSc1;
+        private System.Windows.Forms.Button btnExit;
     }
 }
 

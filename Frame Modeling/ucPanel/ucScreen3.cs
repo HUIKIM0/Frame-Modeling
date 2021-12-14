@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Frame_Modeling.udPanel
+namespace Frame_Modeling.ucPanel
 {
     public partial class ucScreen3 : UserControl
     {
@@ -16,5 +16,6 @@ namespace Frame_Modeling.udPanel
         {
             InitializeComponent();
         }
+
     }
 }

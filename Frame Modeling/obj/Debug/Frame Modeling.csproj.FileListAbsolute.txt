@@ -8,6 +8,6 @@ D:\dev\C#Work\Frame Modeling\Frame Modeling\obj\Debug\Frame Modeling.csproj.Core
 D:\dev\C#Work\Frame Modeling\Frame Modeling\obj\Debug\Frame Modeling.exe
 D:\dev\C#Work\Frame Modeling\Frame Modeling\obj\Debug\Frame Modeling.pdb
 D:\dev\C#Work\Frame Modeling\Frame Modeling\obj\Debug\Frame Modeling.csproj.AssemblyReference.cache
-D:\dev\C#Work\Frame Modeling\Frame Modeling\obj\Debug\Frame_Modeling.udPanel.ucScreen1.resources
-D:\dev\C#Work\Frame Modeling\Frame Modeling\obj\Debug\Frame_Modeling.udPanel.ucScreen2.resources
-D:\dev\C#Work\Frame Modeling\Frame Modeling\obj\Debug\Frame_Modeling.udPanel.ucScreen3.resources
+D:\dev\C#Work\Frame Modeling\Frame Modeling\obj\Debug\Frame_Modeling.ucPanel.ucScreen1.resources
+D:\dev\C#Work\Frame Modeling\Frame Modeling\obj\Debug\Frame_Modeling.ucPanel.ucScreen2.resources
+D:\dev\C#Work\Frame Modeling\Frame Modeling\obj\Debug\Frame_Modeling.ucPanel.ucScreen3.resources

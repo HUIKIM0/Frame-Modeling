@@ -1,5 +1,5 @@
 ﻿
-namespace Frame_Modeling.udPanel
+namespace Frame_Modeling.ucPanel
 {
     partial class ucScreen1
     {

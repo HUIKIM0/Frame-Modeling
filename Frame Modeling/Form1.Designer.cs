@@ -88,6 +88,7 @@ namespace Frame_Modeling
             this.btnConSc3.TabIndex = 2;
             this.btnConSc3.Text = "Config";
             this.btnConSc3.UseVisualStyleBackColor = true;
+            this.btnConSc3.Click += new System.EventHandler(this.button_Click);
             // 
             // btnChaSc2
             // 
@@ -98,6 +99,7 @@ namespace Frame_Modeling
             this.btnChaSc2.TabIndex = 1;
             this.btnChaSc2.Text = "Chart";
             this.btnChaSc2.UseVisualStyleBackColor = true;
+            this.btnChaSc2.Click += new System.EventHandler(this.button_Click);
             // 
             // btnInputSc1
             // 
@@ -108,6 +110,7 @@ namespace Frame_Modeling
             this.btnInputSc1.TabIndex = 0;
             this.btnInputSc1.Text = "Input";
             this.btnInputSc1.UseVisualStyleBackColor = true;
+            this.btnInputSc1.Click += new System.EventHandler(this.button_Click);
             // 
             // btnExit
             // 
@@ -118,6 +121,7 @@ namespace Frame_Modeling
             this.btnExit.TabIndex = 3;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.button_Click);
             // 
             // lboxLog
             // 

@@ -12,7 +12,7 @@ namespace Frame_Modeling
 {
     public partial class Form1 : Form
     {
-        #region 전역변수 유저컨트롤러
+        #region 전역변수 유저컨트롤러 new
         ucPanel.ucScreen1 Sc1 = new ucPanel.ucScreen1();
         ucPanel.ucScreen2 Sc2 = new ucPanel.ucScreen2();
         ucPanel.ucScreen3 Sc3 = new ucPanel.ucScreen3();
@@ -27,6 +27,67 @@ namespace Frame_Modeling
         {
             pMain.Controls.Add(Sc1);
             Sc1.Dock = DockStyle.Fill;
+            Sc2.Dock = DockStyle.Fill;
+            Sc3.Dock = DockStyle.Fill;
+
+            Sc1.eventdelLogSender += Sc_eventdelLogSender;
+            Sc2.eventdelLogSender += Sc_eventdelLogSender;
+            Sc3.eventdelLogSender += Sc_eventdelLogSender;
         }
+
+
+        private void button_Click(object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+
+            switch (btn.Name)
+            {
+                case "btnInputSc1":
+                    pMain.Controls.Clear();
+                    pMain.Controls.Add(Sc1);
+
+                    break;
+                case "btnChaSc2":
+                    pMain.Controls.Clear();
+                    pMain.Controls.Add(Sc2);
+
+                    break;
+                case "btnConSc3":
+                    pMain.Controls.Clear();
+                    pMain.Controls.Add(Sc3);
+                    break;
+                case "btnExit":
+                    break;
+
+                default:
+                    break;
+            }
+
+        }
+
+
+        #region delegate event
+        private void Sc_eventdelLogSender(object oSender, enLogLevel eLevel, string strLog)
+        {
+            Log(eLevel,$"[{oSender}] {strLog}");
+
+        }
+        #endregion
+
+
+        #region Log OverLoading
+        private void Log(enLogLevel eLevel, string LogDesc)
+        {
+            DateTime dTime = DateTime.Now;
+            string LogInfo = $"{dTime:yyyy-MM-dd hh:mm:ss.fff} [{eLevel.ToString()}] {LogDesc}";
+            lboxLog.Items.Insert(0, LogInfo);
+        }
+        private void Log(DateTime dTime, enLogLevel eLevel, string LogDesc)
+        {
+            string LogInfo = $"{dTime:yyyy-MM-dd hh:mm:ss.fff} [{eLevel.ToString()}] {LogDesc}";
+            lboxLog.Items.Insert(0, LogInfo);
+        }
+        #endregion
+
     }
 }

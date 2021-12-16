@@ -12,10 +12,16 @@ namespace Frame_Modeling.ucPanel
 {
     public partial class ucScreen2 : UserControl
     {
+        public event delLogSender eventdelLogSender;
+
         public ucScreen2()
         {
             InitializeComponent();
         }
 
+        private void btnScreen_Click(object sender, EventArgs e)
+        {
+            eventdelLogSender("Screen2", enLogLevel.Info, "Button Click");
+        }
     }
 }

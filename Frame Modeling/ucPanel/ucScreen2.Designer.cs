@@ -53,12 +53,13 @@ namespace Frame_Modeling.ucPanel
             // 
             // btnScreen
             // 
-            this.btnScreen.Location = new System.Drawing.Point(275, 112);
+            this.btnScreen.Location = new System.Drawing.Point(290, 120);
             this.btnScreen.Name = "btnScreen";
             this.btnScreen.Size = new System.Drawing.Size(217, 138);
             this.btnScreen.TabIndex = 4;
             this.btnScreen.Text = "Screen2";
             this.btnScreen.UseVisualStyleBackColor = true;
+            this.btnScreen.Click += new System.EventHandler(this.btnScreen_Click);
             // 
             // ucScreen2
             // 

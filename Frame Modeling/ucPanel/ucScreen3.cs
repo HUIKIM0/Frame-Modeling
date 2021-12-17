@@ -21,7 +21,7 @@ namespace Frame_Modeling.ucPanel
 
         private void btnScreen_Click(object sender, EventArgs e)
         {
-            eventdelLogSender("Screen3", enLogLevel.Info, "Screen3 Button Click");
+            eventdelLogSender("Screen3", enLogLevel.Info, "Button Click");
         }
     }
 }

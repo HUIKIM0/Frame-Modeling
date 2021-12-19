@@ -30,9 +30,9 @@ namespace Frame_Modeling
             Sc2.Dock = DockStyle.Fill;
             Sc3.Dock = DockStyle.Fill;
 
-            Sc1.eventdelLogSender += Sc_eventdelLogSender;
-            Sc2.eventdelLogSender += Sc_eventdelLogSender;
-            Sc3.eventdelLogSender += Sc_eventdelLogSender;
+            Sc1.edelLogSender += Sc_edelLogSender;
+            Sc2.edelLogSender += Sc_edelLogSender;
+            Sc3.edelLogSender += Sc_edelLogSender;
         }
 
 
@@ -67,7 +67,7 @@ namespace Frame_Modeling
 
 
         #region delegate event
-        private void Sc_eventdelLogSender(object oSender, enLogLevel eLevel, string strLog)
+        private void Sc_edelLogSender(object oSender, enLogLevel eLevel, string strLog)
         {
             Log(eLevel,$"[{oSender}] {strLog}");
 

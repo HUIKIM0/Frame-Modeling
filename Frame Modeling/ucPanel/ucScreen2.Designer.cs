@@ -29,9 +29,14 @@ namespace Frame_Modeling.ucPanel
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnScreen = new System.Windows.Forms.Button();
+            this.btnChartLoad = new System.Windows.Forms.Button();
+            this.ChartSales = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            ((System.ComponentModel.ISupportInitialize)(this.ChartSales)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -47,30 +52,48 @@ namespace Frame_Modeling.ucPanel
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(20, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(107, 15);
+            this.label1.Size = new System.Drawing.Size(94, 15);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Data 입력 화면";
+            this.label1.Text = "Chart Display";
             // 
-            // btnScreen
+            // btnChartLoad
             // 
-            this.btnScreen.Location = new System.Drawing.Point(290, 120);
-            this.btnScreen.Name = "btnScreen";
-            this.btnScreen.Size = new System.Drawing.Size(217, 138);
-            this.btnScreen.TabIndex = 4;
-            this.btnScreen.Text = "Screen2";
-            this.btnScreen.UseVisualStyleBackColor = true;
-            this.btnScreen.Click += new System.EventHandler(this.btnScreen_Click);
+            this.btnChartLoad.Location = new System.Drawing.Point(551, 7);
+            this.btnChartLoad.Name = "btnChartLoad";
+            this.btnChartLoad.Size = new System.Drawing.Size(217, 30);
+            this.btnChartLoad.TabIndex = 4;
+            this.btnChartLoad.Text = "Chart Load";
+            this.btnChartLoad.UseVisualStyleBackColor = true;
+            this.btnChartLoad.Click += new System.EventHandler(this.btnChartLoad_Click);
+            // 
+            // ChartSales
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.ChartSales.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.ChartSales.Legends.Add(legend1);
+            this.ChartSales.Location = new System.Drawing.Point(23, 52);
+            this.ChartSales.Name = "ChartSales";
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.ChartSales.Series.Add(series1);
+            this.ChartSales.Size = new System.Drawing.Size(745, 295);
+            this.ChartSales.TabIndex = 5;
+            this.ChartSales.Text = "chart1";
             // 
             // ucScreen2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Orchid;
-            this.Controls.Add(this.btnScreen);
+            this.BackColor = System.Drawing.Color.Thistle;
+            this.Controls.Add(this.ChartSales);
+            this.Controls.Add(this.btnChartLoad);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Name = "ucScreen2";
             this.Size = new System.Drawing.Size(789, 350);
+            ((System.ComponentModel.ISupportInitialize)(this.ChartSales)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -80,6 +103,7 @@ namespace Frame_Modeling.ucPanel
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnScreen;
+        private System.Windows.Forms.Button btnChartLoad;
+        private System.Windows.Forms.DataVisualization.Charting.Chart ChartSales;
     }
 }

@@ -20,10 +20,10 @@ namespace Frame_Modeling.ucPanel
             InitializeComponent();
         }
 
-        private void btnScreen_Click(object sender, EventArgs e)
+        private void btnRandomSet_Click(object sender, EventArgs e)
         {
             //Main에 줄 정보
-            eventdelLogSender("Screen1", enLogLevel.Info, "Button Click");
+            eventdelLogSender("Screen1", enLogLevel.Info, "Random Set Button Click");
         }
     }
 }

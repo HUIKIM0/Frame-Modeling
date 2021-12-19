@@ -31,7 +31,8 @@ namespace Frame_Modeling.ucPanel
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnScreen = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cboxType = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // panel1
@@ -47,26 +48,34 @@ namespace Frame_Modeling.ucPanel
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(20, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(107, 15);
+            this.label1.Size = new System.Drawing.Size(49, 15);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Data 입력 화면";
+            this.label1.Text = "Config";
             // 
-            // btnScreen
+            // label2
             // 
-            this.btnScreen.Location = new System.Drawing.Point(290, 120);
-            this.btnScreen.Name = "btnScreen";
-            this.btnScreen.Size = new System.Drawing.Size(217, 138);
-            this.btnScreen.TabIndex = 4;
-            this.btnScreen.Text = "Screen3";
-            this.btnScreen.UseVisualStyleBackColor = true;
-            this.btnScreen.Click += new System.EventHandler(this.btnScreen_Click);
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(20, 72);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(91, 15);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "- Chart Type";
+            // 
+            // cboxType
+            // 
+            this.cboxType.FormattingEnabled = true;
+            this.cboxType.Location = new System.Drawing.Point(117, 69);
+            this.cboxType.Name = "cboxType";
+            this.cboxType.Size = new System.Drawing.Size(142, 23);
+            this.cboxType.TabIndex = 5;
             // 
             // ucScreen3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Bisque;
-            this.Controls.Add(this.btnScreen);
+            this.Controls.Add(this.cboxType);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Name = "ucScreen3";
@@ -80,6 +89,7 @@ namespace Frame_Modeling.ucPanel
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnScreen;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox cboxType;
     }
 }

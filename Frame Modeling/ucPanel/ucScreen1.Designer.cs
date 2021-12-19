@@ -31,7 +31,9 @@ namespace Frame_Modeling.ucPanel
         {
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnScreen = new System.Windows.Forms.Button();
+            this.btnRandom = new System.Windows.Forms.Button();
+            this.dgv = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -39,9 +41,9 @@ namespace Frame_Modeling.ucPanel
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(20, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(107, 15);
+            this.label1.Size = new System.Drawing.Size(112, 15);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Data 입력 화면";
+            this.label1.Text = "Chart Data Input";
             // 
             // panel1
             // 
@@ -51,26 +53,38 @@ namespace Frame_Modeling.ucPanel
             this.panel1.Size = new System.Drawing.Size(745, 3);
             this.panel1.TabIndex = 1;
             // 
-            // btnScreen
+            // btnRandom
             // 
-            this.btnScreen.Location = new System.Drawing.Point(290, 120);
-            this.btnScreen.Name = "btnScreen";
-            this.btnScreen.Size = new System.Drawing.Size(217, 138);
-            this.btnScreen.TabIndex = 2;
-            this.btnScreen.Text = "Screen1";
-            this.btnScreen.UseVisualStyleBackColor = true;
-            this.btnScreen.Click += new System.EventHandler(this.btnScreen_Click);
+            this.btnRandom.Location = new System.Drawing.Point(551, 6);
+            this.btnRandom.Name = "btnRandom";
+            this.btnRandom.Size = new System.Drawing.Size(217, 31);
+            this.btnRandom.TabIndex = 2;
+            this.btnRandom.Text = "Random Set";
+            this.btnRandom.UseVisualStyleBackColor = true;
+            this.btnRandom.Click += new System.EventHandler(this.btnRandomSet_Click);
+            // 
+            // dgv
+            // 
+            this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv.Location = new System.Drawing.Point(23, 49);
+            this.dgv.Name = "dgv";
+            this.dgv.RowHeadersWidth = 51;
+            this.dgv.RowTemplate.Height = 27;
+            this.dgv.Size = new System.Drawing.Size(745, 298);
+            this.dgv.TabIndex = 3;
             // 
             // ucScreen1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
-            this.Controls.Add(this.btnScreen);
+            this.Controls.Add(this.dgv);
+            this.Controls.Add(this.btnRandom);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Name = "ucScreen1";
             this.Size = new System.Drawing.Size(789, 350);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -80,6 +94,7 @@ namespace Frame_Modeling.ucPanel
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnScreen;
+        private System.Windows.Forms.Button btnRandom;
+        private System.Windows.Forms.DataGridView dgv;
     }
 }

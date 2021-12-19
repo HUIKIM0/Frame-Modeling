@@ -19,9 +19,9 @@ namespace Frame_Modeling.ucPanel
             InitializeComponent();
         }
 
-        private void btnScreen_Click(object sender, EventArgs e)
+        private void btnChartLoad_Click(object sender, EventArgs e)
         {
-            eventdelLogSender("Screen2", enLogLevel.Info, "Button Click");
+            eventdelLogSender("Screen2", enLogLevel.Info, "Chart Load Button Click");
         }
     }
 }

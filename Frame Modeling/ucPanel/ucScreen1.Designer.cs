@@ -32,8 +32,8 @@ namespace Frame_Modeling.ucPanel
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnRandom = new System.Windows.Forms.Button();
-            this.dgv = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
+            this.DGV = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.DGV)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -63,28 +63,28 @@ namespace Frame_Modeling.ucPanel
             this.btnRandom.UseVisualStyleBackColor = true;
             this.btnRandom.Click += new System.EventHandler(this.btnRandomSet_Click);
             // 
-            // dgv
+            // DGV
             // 
-            this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv.Location = new System.Drawing.Point(23, 49);
-            this.dgv.Name = "dgv";
-            this.dgv.RowHeadersWidth = 51;
-            this.dgv.RowTemplate.Height = 27;
-            this.dgv.Size = new System.Drawing.Size(745, 298);
-            this.dgv.TabIndex = 3;
+            this.DGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGV.Location = new System.Drawing.Point(23, 49);
+            this.DGV.Name = "DGV";
+            this.DGV.RowHeadersWidth = 51;
+            this.DGV.RowTemplate.Height = 27;
+            this.DGV.Size = new System.Drawing.Size(745, 298);
+            this.DGV.TabIndex = 3;
             // 
             // ucScreen1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
-            this.Controls.Add(this.dgv);
+            this.Controls.Add(this.DGV);
             this.Controls.Add(this.btnRandom);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Name = "ucScreen1";
             this.Size = new System.Drawing.Size(789, 350);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -95,6 +95,6 @@ namespace Frame_Modeling.ucPanel
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnRandom;
-        private System.Windows.Forms.DataGridView dgv;
+        private System.Windows.Forms.DataGridView DGV;
     }
 }

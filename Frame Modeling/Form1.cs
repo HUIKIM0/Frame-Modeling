@@ -33,6 +33,8 @@ namespace Frame_Modeling
             Sc1.edelLogSender += Sc_edelLogSender;
             Sc2.edelLogSender += Sc_edelLogSender;
             Sc3.edelLogSender += Sc_edelLogSender;
+
+            Sc1.edelDataSender += Sc1_edelDataSender;
         }
 
 
@@ -72,6 +74,14 @@ namespace Frame_Modeling
             Log(eLevel,$"[{oSender}] {strLog}");
 
         }
+
+
+        private void Sc1_edelDataSender(object oSender, DataTable dt)
+        {
+
+        }
+
+
         #endregion
 
 

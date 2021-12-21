@@ -23,7 +23,7 @@ namespace Frame_Modeling    //namespace 동일하게. 전역으로 사용할
         Error,
     }
 
-    public enum Kor_Week
+    public enum enKor_Week
     {
         월,
         화,
@@ -41,8 +41,6 @@ namespace Frame_Modeling    //namespace 동일하게. 전역으로 사용할
     public delegate void delDataTableSender(object oSender, DataTable dt);
     //ucScreen3의 delegate Main으로 Chart종류를 전달하기 위함
     public delegate void delChartTypeSender(object oSender, SeriesChartType ct);
-
-
 
 
 }

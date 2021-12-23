@@ -13,6 +13,7 @@ namespace Frame_Modeling.ucPanel
     public partial class ucScreen3 : UserControl
     {
         public event delLogSender edelLogSender;
+        public event delChartTypeSender edelChartTypeSender;
 
         public ucScreen3()
         {

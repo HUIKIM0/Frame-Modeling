@@ -37,10 +37,22 @@ namespace Frame_Modeling    //namespace 동일하게. 전역으로 사용할
     //ucScreen1~3 의 delegate. Main으로 Log를 전달하기 위함
     public delegate void delLogSender(object oSender, enLogLevel eLevel, string strLog);
 
-    //ucScreen1의 delegate Main으로 Data값을 전달하기 위함
+    //ucScreen1의 delegate. Main으로 Data값을 전달하기 위함
     public delegate void delDataTableSender(object oSender, DataTable dt);
-    //ucScreen3의 delegate Main으로 Chart종류를 전달하기 위함
+    //ucScreen3의 delegate. Main으로 Chart종류를 전달하기 위함
     public delegate void delChartTypeSender(object oSender, SeriesChartType ct);
+
+
+
+    // Screen1/Screen3의 값을 가질 class
+    public class ChartData
+    {
+        DataTable _Sc1Data;
+        SeriesChartType _Sc3ChartType = SeriesChartType.Area;
+
+        public DataTable Sc1Data { get => _Sc1Data; set => _Sc1Data = value; }
+        public SeriesChartType Sc3ChartType { get => _Sc3ChartType; set => _Sc3ChartType = value; }
+    }
 
 
 }

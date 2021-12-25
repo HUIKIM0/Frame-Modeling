@@ -30,7 +30,7 @@ namespace Frame_Modeling.ucPanel
             DataClear();
             DataCreate();
 
-            DataTable dt = DGV.DataSource as DataTable;  //★
+           // DataTable dt = DGV.DataSource as DataTable;  //★ Main에 보내기위한 작업
             edelDataSender(this, dt);
         }
 
@@ -81,9 +81,9 @@ namespace Frame_Modeling.ucPanel
             DataRow row = dt.NewRow();
             row["제품"] = strProduct;
 
-            foreach (enKor_Week week in Enum.GetValues(typeof(enKor_Week)))
+            foreach (enKor_Week oDay in Enum.GetValues(typeof(enKor_Week)))
             {
-                row[week.ToString()] = rd.Next(30, 301);
+                row[oDay.ToString()] = rd.Next(30, 301);
             }
 
             dt.Rows.Add(row);

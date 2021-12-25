@@ -68,6 +68,7 @@ namespace Frame_Modeling.ucPanel
             this.cboxType.Name = "cboxType";
             this.cboxType.Size = new System.Drawing.Size(142, 23);
             this.cboxType.TabIndex = 5;
+            this.cboxType.SelectedIndexChanged += new System.EventHandler(this.cboxType_SelectedIndexChanged);
             // 
             // ucScreen3
             // 
@@ -80,6 +81,7 @@ namespace Frame_Modeling.ucPanel
             this.Controls.Add(this.label1);
             this.Name = "ucScreen3";
             this.Size = new System.Drawing.Size(789, 350);
+            this.Load += new System.EventHandler(this.ucScreen3_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

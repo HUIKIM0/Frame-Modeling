@@ -37,6 +37,7 @@ namespace Frame_Modeling
             Sc3.edelLogSender += Sc_edelLogSender;
 
             Sc1.edelDataSender += Sc1_edelDataSender;
+            Sc3.edelChartTypeSender += Sc3_edelChartTypeSender;
         }
 
 
@@ -85,8 +86,10 @@ namespace Frame_Modeling
             cData.Sc1Data = dt;
         }
 
-
-
+        private void Sc3_edelChartTypeSender(object oSender, System.Windows.Forms.DataVisualization.Charting.SeriesChartType ct)
+        {
+            cData.Sc3ChartType = ct;
+        }
         #endregion
 
 

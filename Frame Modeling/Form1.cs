@@ -27,12 +27,13 @@ namespace Frame_Modeling
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            pMain.Controls.Add(Sc1);
             Sc1.Dock = DockStyle.Fill;
             Sc2.Dock = DockStyle.Fill;
             Sc3.Dock = DockStyle.Fill;
 
-            Sc1.edelLogSender += Sc_edelLogSender;
+            pMain.Controls.Add(Sc1);
+
+            Sc1.edelLogSender += Sc_edelLogSender;      
             Sc2.edelLogSender += Sc_edelLogSender;
             Sc3.edelLogSender += Sc_edelLogSender;
 
@@ -81,12 +82,13 @@ namespace Frame_Modeling
 
         }
 
-        //ucScreen1
+        //ucScreen1의 정보 ChartData(cData)에
         private void Sc1_edelDataSender(object oSender, DataTable dt)
         {
             cData.Sc1Data = dt;
         }
 
+        //ucScreen3의 정보 ChartData(cData)에
         private void Sc3_edelChartTypeSender(object oSender, System.Windows.Forms.DataVisualization.Charting.SeriesChartType ct)
         {
             cData.Sc3ChartType = ct;

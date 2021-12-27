@@ -62,11 +62,12 @@ namespace Frame_Modeling.ucPanel
 
             //DataRow row = dt.NewRow();
             //row["제품"] = "컵라면";     Column 월~일은 랜덤으로 반복해서 돌릴거라 함수만듦
+            //dt.Rows.Add(row);
 
             Random rd = new Random();
 
-            DataRowCreate(dt, "샴푸", rd);
-            DataRowCreate(dt, "장난감", rd);
+            DataRowCreate(dt, "음료수", rd);
+            DataRowCreate(dt, "고기", rd);
             DataRowCreate(dt, "라면", rd);
             DataRowCreate(dt, "김", rd);
 
@@ -81,8 +82,9 @@ namespace Frame_Modeling.ucPanel
             DataRow row = dt.NewRow();
             row["제품"] = strProduct;
 
-            foreach (enKor_Week oDay in Enum.GetValues(typeof(enKor_Week)))
+            foreach (enKor_Week oDay in Enum.GetValues(typeof(enKor_Week)))  //enum 월~일
             {
+                //row["월"] = rd.Next(30,301);
                 row[oDay.ToString()] = rd.Next(30, 301);
             }
 

@@ -15,7 +15,6 @@ namespace Frame_Modeling.ucPanel
     {
         public event delLogSender edelLogSender;
 
-
         ChartData _cData = new ChartData();
 
         public ucScreen2()
@@ -44,7 +43,7 @@ namespace Frame_Modeling.ucPanel
                 // Row들을 가져옴
                 foreach (DataRow oRow in dt.Rows)
                 {
-                    Series series = ChartSales.Series.Add(oRow["제품"].ToString()); // DataColumn이 "제품"인 라인에 속한
+                    Series series = ChartSales.Series.Add(oRow["제품"].ToString()); // 음료수,고기,라면,김(오른쪽에 적힘)
                     series.ChartType = cData.Sc3ChartType;  // 차트 종류
                     series.Points.AddXY(enKor_Week.월.ToString(), oRow[enKor_Week.월.ToString()]); //차트의 아랫줄에 표기할 텍스트
                     series.Points.AddXY(enKor_Week.화.ToString(), oRow[enKor_Week.화.ToString()]);
@@ -53,6 +52,7 @@ namespace Frame_Modeling.ucPanel
                     series.Points.AddXY(enKor_Week.금.ToString(), oRow[enKor_Week.금.ToString()]);
                     series.Points.AddXY(enKor_Week.토.ToString(), oRow[enKor_Week.토.ToString()]);
                     series.Points.AddXY(enKor_Week.일.ToString(), oRow[enKor_Week.일.ToString()]);
+                    //series.Points.AddXY("일", oRow["일"]);  //이름,데이터
                 }
             }
         }

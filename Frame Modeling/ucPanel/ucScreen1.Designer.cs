@@ -33,6 +33,9 @@ namespace Frame_Modeling.ucPanel
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnRandom = new System.Windows.Forms.Button();
             this.DGV = new System.Windows.Forms.DataGridView();
+            this.tboxAdd = new System.Windows.Forms.TextBox();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DGV)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,14 +73,43 @@ namespace Frame_Modeling.ucPanel
             this.DGV.Name = "DGV";
             this.DGV.RowHeadersWidth = 51;
             this.DGV.RowTemplate.Height = 27;
-            this.DGV.Size = new System.Drawing.Size(745, 298);
+            this.DGV.Size = new System.Drawing.Size(745, 263);
             this.DGV.TabIndex = 3;
+            // 
+            // tboxAdd
+            // 
+            this.tboxAdd.Location = new System.Drawing.Point(125, 321);
+            this.tboxAdd.Name = "tboxAdd";
+            this.tboxAdd.Size = new System.Drawing.Size(172, 25);
+            this.tboxAdd.TabIndex = 4;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Location = new System.Drawing.Point(303, 320);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(109, 28);
+            this.btnAdd.TabIndex = 5;
+            this.btnAdd.Text = "Product Add";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(20, 327);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(99, 15);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Product Name";
             // 
             // ucScreen1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.tboxAdd);
             this.Controls.Add(this.DGV);
             this.Controls.Add(this.btnRandom);
             this.Controls.Add(this.panel1);
@@ -96,5 +128,8 @@ namespace Frame_Modeling.ucPanel
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnRandom;
         private System.Windows.Forms.DataGridView DGV;
+        private System.Windows.Forms.TextBox tboxAdd;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Label label2;
     }
 }

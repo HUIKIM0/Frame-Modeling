@@ -22,6 +22,7 @@ namespace Frame_Modeling.ucPanel
             InitializeComponent();
         }
 
+        #region Button Click
         private void btnRandomSet_Click(object sender, EventArgs e)
         {
             //Main에 줄 Log 정보
@@ -30,15 +31,31 @@ namespace Frame_Modeling.ucPanel
             DataClear();
             DataCreate();
 
-           // DataTable dt = DGV.DataSource as DataTable;  //★ Main에 보내기위한 작업
+            DataTable dt = DGV.DataSource as DataTable;  //★ Main에 보내기위한 작업
             edelDataSender(this, dt);
         }
 
 
+        /* Product(Row) 추가 버튼 */
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            edelLogSender("Screen1", enLogLevel.Info, "Product Add Button Click");
+            Random rd = new Random();
+
+            try
+            {
+                DataRowCreate(dt, tboxAdd.Text, rd);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Random Set Button을 클릭하여 데이터를 먼저 확인하세요");
+            }
+        }
+        #endregion
+
+        #region Function
         private void DataCreate()
         {
-            dt = new DataTable();
-
             /* DataColumn 신규생성 */
             DataColumn colProduct = new DataColumn("제품",typeof(string));
             DataColumn colMon = new DataColumn("월",typeof(string));
@@ -61,7 +78,7 @@ namespace Frame_Modeling.ucPanel
 
 
             //DataRow row = dt.NewRow();
-            //row["제품"] = "컵라면";     Column 월~일은 랜덤으로 반복해서 돌릴거라 함수만듦
+            //row["제품"] = "컵라면";     Column 월~일은 랜덤으로 반복해서 돌릴거라 Row 함수만듦
             //dt.Rows.Add(row);
 
             Random rd = new Random();
@@ -71,15 +88,15 @@ namespace Frame_Modeling.ucPanel
             DataRowCreate(dt, "라면", rd);
             DataRowCreate(dt, "김", rd);
 
-
             DGV.DataSource = dt;    
-
         }
+
 
         private void DataRowCreate(DataTable dt,string strProduct,Random rd)
         { 
             /* DataRow 신규생성 */
             DataRow row = dt.NewRow();
+
             row["제품"] = strProduct;
 
             foreach (enKor_Week oDay in Enum.GetValues(typeof(enKor_Week)))  //enum 월~일
@@ -96,5 +113,7 @@ namespace Frame_Modeling.ucPanel
             dt.Clear();
             DGV.DataSource = null;
         }
+        #endregion
+
     }
 }

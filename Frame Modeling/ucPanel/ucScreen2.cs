@@ -15,7 +15,8 @@ namespace Frame_Modeling.ucPanel
     {
         public event delLogSender edelLogSender;
 
-        ChartData _cData = new ChartData();
+        ChartData _cData = new ChartData();   // ChartData,SeriesChartType
+
 
         public ucScreen2()
         {

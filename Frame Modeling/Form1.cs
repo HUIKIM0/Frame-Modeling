@@ -70,7 +70,6 @@ namespace Frame_Modeling
                 default:
                     break;
             }
-
         }
 
 

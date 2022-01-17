@@ -56,7 +56,7 @@ namespace Frame_Modeling
                 case "btnChaSc2":
                     pMain.Controls.Clear();
                     pMain.Controls.Add(Sc2);
-                    Sc2.SetData(cData);        //버튼 클릭 시 class cData(Sc1,Sc3정보 모은)게 넘어가게
+                    Sc2.ClassSetData(cData);        //버튼 클릭 시 class cData(Sc1,Sc3정보 모은)게 넘어가게
 
                     break;
                 case "btnConSc3":

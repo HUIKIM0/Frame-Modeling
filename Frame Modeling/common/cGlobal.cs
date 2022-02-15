@@ -54,5 +54,4 @@ namespace Frame_Modeling    //namespace 동일하게. 전역으로 사용할
         public SeriesChartType Sc3ChartType { get => _Sc3ChartType; set => _Sc3ChartType = value; }
     }
 
-
 }

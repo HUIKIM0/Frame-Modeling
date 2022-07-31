@@ -14,7 +14,7 @@ namespace Frame_Modeling    //namespace 동일하게. 전역으로 사용할
     }
 
     
-    /* 외부에서도 바로 사용 가능하게 class밖에 */
+    /* 외부에서도 바로 사용 가능한 publit class 모아놓음 */
 
     public enum enLogLevel
     {

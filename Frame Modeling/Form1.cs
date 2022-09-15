@@ -12,7 +12,7 @@ namespace Frame_Modeling
 {
     public partial class Form1 : Form
     {
-        #region 전역변수 유저컨트롤러 new / cGlobal.cs의 class
+        #region 유저컨트롤러 new / cGlobal.cs의 class
         ucPanel.ucScreen1 Sc1 = new ucPanel.ucScreen1();
         ucPanel.ucScreen2 Sc2 = new ucPanel.ucScreen2();
         ucPanel.ucScreen3 Sc3 = new ucPanel.ucScreen3();
@@ -56,7 +56,7 @@ namespace Frame_Modeling
                 case "btnChaSc2":
                     pMain.Controls.Clear();
                     pMain.Controls.Add(Sc2);
-                    Sc2.ClassSetData(cData);        //버튼 클릭 시 class cData(Sc1,Sc3정보 모은)게 넘어가게
+                    Sc2.ClassSetData(cData);    //버튼 클릭 시 Sc1(Data),Sc3(Chart Type)정보 class ChartData에 모아놓은게 다 넘어가게
 
                     break;
                 case "btnConSc3":
@@ -81,13 +81,13 @@ namespace Frame_Modeling
 
         }
 
-        //ucScreen1의 정보 ChartData(cData)에
+        //ucScreen1의 정보 ChartData에
         private void Sc1_edelDataSender(object oSender, DataTable dt)
         {
             cData.Sc1Data = dt;
         }
 
-        //ucScreen3의 정보 ChartData(cData)에
+        //ucScreen3의 정보 ChartData에
         private void Sc3_edelChartTypeSender(object oSender, System.Windows.Forms.DataVisualization.Charting.SeriesChartType ct)
         {
             cData.Sc3ChartType = ct;

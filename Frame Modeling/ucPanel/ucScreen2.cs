@@ -60,7 +60,7 @@ namespace Frame_Modeling.ucPanel
 
 
         /* 원본 틀은 cGlobal에
-           ucScreen1,3의 데이터를 delegate event 로 모아서 class에 넣은건 Main
+           ucScreen1,3의 데이터를 delegate event 통해 Main으로 넘김 -> Main에서 받은 정보로 class에 넣음
            Main에서 모은 class(데이터)를 받는다 */
         public void ClassSetData(ChartData cData)
         {
